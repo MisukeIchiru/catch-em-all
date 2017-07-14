@@ -55922,7 +55922,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({template:/*ion-inline-start:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/tabs/tabs.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({template:/*ion-inline-start:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Start" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Karte" tabIcon="map"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Chat" tabIcon="chatbubbles"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Einstellungen" tabIcon="settings"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
