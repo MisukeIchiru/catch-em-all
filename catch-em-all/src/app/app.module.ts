@@ -7,6 +7,8 @@ import { KartePage } from '../pages/karte/karte';
 import { ChatPage } from '../pages/chat/chat';
 import { HomePage } from '../pages/home/home';
 import { EinstellungenPage } from '../pages/einstellungen/einstellungen';
+import { Beitreten } from '../pages/beitreten/beitreten';
+import { Erstellen } from '../pages/erstellen/erstellen';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -19,7 +21,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ChatPage,
     HomePage,
     EinstellungenPage,
-    TabsPage
+    TabsPage,
+    Erstellen,
+    Beitreten
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ChatPage,
     HomePage,
     EinstellungenPage,
+    Erstellen,
+    Beitreten,
     TabsPage
   ],
   providers: [

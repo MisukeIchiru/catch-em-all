@@ -8,8 +8,8 @@
   <h2 style="text-align: center;">Willkommen!</h2>
   <h3 style="text-align: center;">Neues Spiel starten oder einem Spiel beitreten?</h3>
   <br/>
-  <button ion-button full>Neues Spiel erstellen</button>
+  <button [navPush]="goErstellen" ion-button full>Neues Spiel erstellen</button>
   <br/>
   <br/>
-  <button ion-button full>Spiel beitreten</button>
+  <button [navPush]="goBeitreten" ion-button full>Spiel beitreten</button>
 </ion-content>

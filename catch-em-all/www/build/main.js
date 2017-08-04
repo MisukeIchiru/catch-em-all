@@ -55937,6 +55937,8 @@ EinstellungenPage = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__beitreten_beitreten__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__erstellen_erstellen__ = __webpack_require__(268);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55949,19 +55951,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
+        this.goErstellen = __WEBPACK_IMPORTED_MODULE_3__erstellen_erstellen__["a" /* Erstellen */];
+        this.goBeitreten = __WEBPACK_IMPORTED_MODULE_2__beitreten_beitreten__["a" /* Beitreten */];
     }
     return HomePage;
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2 style="text-align: center;">Willkommen!</h2>\n  <h3 style="text-align: center;">Neues Spiel starten oder einem Spiel beitreten?</h3>\n  <br/>\n  <button ion-button full>Neues Spiel erstellen</button>\n  <br/>\n  <br/>\n  <button ion-button full>Spiel beitreten</button>\n</ion-content>\n'/*ion-inline-end:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2 style="text-align: center;">Willkommen!</h2>\n  <h3 style="text-align: center;">Neues Spiel starten oder einem Spiel beitreten?</h3>\n  <br/>\n  <button [navPush]="goErstellen" ion-button full>Neues Spiel erstellen</button>\n  <br/>\n  <br/>\n  <button [navPush]="goBeitreten" ion-button full>Spiel beitreten</button>\n</ion-content>\n'/*ion-inline-end:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
 ], HomePage);
 
+var _a;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -112191,6 +112198,100 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
+
+/***/ }),
+/* 265 */,
+/* 266 */,
+/* 267 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Beitreten; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the Beitreten page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var Beitreten = (function () {
+    function Beitreten(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    Beitreten.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Beitreten');
+    };
+    return Beitreten;
+}());
+Beitreten = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-beitreten',template:/*ion-inline-start:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/beitreten/beitreten.html"*/'<!--\n  Generated template for the Beitreten page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>beitreten</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/beitreten/beitreten.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+], Beitreten);
+
+var _a, _b;
+//# sourceMappingURL=beitreten.js.map
+
+/***/ }),
+/* 268 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Erstellen; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the Erstellen page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var Erstellen = (function () {
+    function Erstellen(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    Erstellen.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Erstellen');
+    };
+    return Erstellen;
+}());
+Erstellen = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-erstellen',template:/*ion-inline-start:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/erstellen/erstellen.html"*/'<!--\n  Generated template for the Erstellen page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>erstellen</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/admin/Google Drive/Documents/Studium/Rich Media Applications Hausarbeit/catch-em-all/catch-em-all/src/pages/erstellen/erstellen.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+], Erstellen);
+
+var _a, _b;
+//# sourceMappingURL=erstellen.js.map
 
 /***/ })
 /******/ ]);
